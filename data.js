@@ -143,6 +143,15 @@ var data = [{
 		"4": ["Heizou", "Ningguang", "Thoma"]
 	},{
 		"5": ["Yoimiya"],
+		"4": ["Bennett", "Xinyan", "Yun Jin"]
+	}]
+},{
+	"version": "3.0",
+	"banner": [{
+		"5": [],
+		"4": []
+	},{
+		"5": [],
 		"4": []
 	}]
 }];
