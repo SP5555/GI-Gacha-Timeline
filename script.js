@@ -26,7 +26,6 @@ async function mainLoader(data, img_src) {
 		for (var i = 0; i < data.length; i++) {
 			idvData = data[i];
 
-
 			let version_r_td = document.createElement("td");
 			version_r_td.colSpan = idvData["banner"].length;
 			version_r_td.innerHTML = idvData["version"];
@@ -35,8 +34,12 @@ async function mainLoader(data, img_src) {
 			} else {
 				version_tr4.appendChild(version_r_td);
 			}
+		}
 
-			for (var i1 = 0; i1 < idvData["banner"].length; i1++) {
+		for (var i = data.length - 1; i >= 0; i--) {
+			idvData = data[i];
+
+			for (var i1 = idvData["banner"].length - 1; i1 >= 0; i1--) {
 				
 				for (var i2 = 0; i2 < idvData["banner"][i1][s].length; i2++) {
 					
@@ -112,9 +115,8 @@ function visualizer(data) {
 				let tdbox = document.getElementById(`${character}_v${idvData["version"]}_b${i1}`)
 				for (var x = 12; x > 0; x--) {
 					try {
-						c1 = x.toString(16);
-						c2 = (x-1).toString(16);
-						tdbox.style = `background: linear-gradient(to right, #${c1}${c1}${c1}, #${c2}${c2}${c2});`;
+						c = x.toString(16);
+						tdbox.style = `background-color: #${c}${c}${c};`;
 
 						if (x == 12) {
 							let banner_note = document.createElement("div");
@@ -145,7 +147,7 @@ function visualizer(data) {
 				for (var x = 12; x > 0; x-=3) {
 					try {
 						c1 = x.toString(16);
-						c2 = (x-3).toString(16);
+						c2 = (x-1).toString(16);
 						tdbox.style = `background: linear-gradient(to right, #${c1}${c1}${c1}, #${c2}${c2}${c2});`;
 						tdbox = tdbox.nextSibling;
 					}
