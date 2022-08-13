@@ -148,6 +148,15 @@ var data = [{
 },{
 	"version": "3.0",
 	"banner": [{
+		"5": ["Tighnari", "Zhongli"],
+		"4": ["Collei"]
+	},{
+		"5": ["Ganyu", "Kokomi"],
+		"4": ["Dori"]
+	}]
+},{
+	"version": "3.1",
+	"banner": [{
 		"5": [],
 		"4": []
 	},{
