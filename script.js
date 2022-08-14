@@ -113,10 +113,12 @@ function visualizer(data) {
 				}
 
 				let tdbox = document.getElementById(`${character}_v${idvData["version"]}_b${i1}`)
-				for (var x = 12; x > 0; x--) {
+				for (var x = 12; x > 0; x --) {
 					try {
-						c = x.toString(16);
-						tdbox.style = `background-color: #${c}${c}${c};`;
+						R = 10*x;
+						G = 26 + (x*10);
+						B = 56 + (x*15);
+						tdbox.style.backgroundColor = `rgb(${R},${G},${B})`;
 
 						if (x == 12) {
 							let banner_note = document.createElement("div");
@@ -146,9 +148,10 @@ function visualizer(data) {
 				let tdbox = document.getElementById(`${character}_v${idvData["version"]}_b${i1}`)
 				for (var x = 12; x > 0; x-=3) {
 					try {
-						c1 = x.toString(16);
-						c2 = (x-1).toString(16);
-						tdbox.style = `background: linear-gradient(to right, #${c1}${c1}${c1}, #${c2}${c2}${c2});`;
+						R = 10*x;
+						G = 26 + (x*10);
+						B = 56 + (x*15);
+						tdbox.style.backgroundColor = `rgb(${R},${G},${B})`;
 						tdbox = tdbox.nextSibling;
 					}
 					catch(e) {}
