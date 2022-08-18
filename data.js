@@ -149,7 +149,7 @@ var data = [{
 	"version": "3.0",
 	"banner": [{
 		"5": ["Tighnari", "Zhongli"],
-		"4": ["Collei"]
+		"4": ["Collei", "Diona", "Fischl"]
 	},{
 		"5": ["Ganyu", "Kokomi"],
 		"4": ["Dori"]
