@@ -152,7 +152,7 @@ var data = [{
 		"4": ["Collei", "Diona", "Fischl"]
 	},{
 		"5": ["Ganyu", "Kokomi"],
-		"4": ["Dori"]
+		"4": ["Dori", "Sucrose", "Xingqiu"]
 	}]
 },{
 	"version": "3.1",
