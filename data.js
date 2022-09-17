@@ -157,10 +157,10 @@ var data = [{
 },{
 	"version": "3.1",
 	"banner": [{
-		"5": ["Cyno"],
+		"5": ["Cyno", "Venti"],
 		"4": ["Candace"]
 	},{
-		"5": ["Nilou"],
+		"5": ["Albedo", "Nilou"],
 		"4": []
 	}]
 }];
