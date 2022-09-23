@@ -1,35 +1,63 @@
+:root{
+	--c0: #001A38;
+	--c1: #00224E;
+	--c2: #003367;
+	--cBanner: #7891ec;
+}
+
 @font-face{font-family: GIFont; src: url("fonts/zh-cn.ttf");}
 html{min-width: 440px; scroll-behavior: smooth;}
 body{
 	font-family: GIFont; cursor: default;
-	background: #00224E; color: #FFF;
+	background: var(--c1); color: #FFF;
 }
 body::-webkit-scrollbar {display: none;}
 *{box-sizing: border-box; outline: none; font: inherit;}
 
-.wrapper{margin-left: 10px; margin-right: 10px;}
-@media (min-width: 768px) {.wrapper{margin-left: 6%; margin-right: 6%;}}
-@media (min-width: 992px) {.wrapper{margin-left: 8%; margin-right: 8%;}}
-@media (min-width: 1200px) {.wrapper{margin-left: 12%; margin-right: 12%;}}
+.wrapper{margin-left: 10px; margin-right: 10px; display: flex;}
+.wrapper-body{margin-left: 10px; margin-right: 10px;}
+@media (min-width: 768px) {
+	.wrapper{margin-left: 6%; margin-right: 6%;}
+	.wrapper-body{margin-left: 6%; margin-right: 6%;}
+}
+@media (min-width: 992px) {
+	.wrapper{margin-left: 8%; margin-right: 8%;}
+	.wrapper-body{margin-left: 6%; margin-right: 6%;}
+}
+@media (min-width: 1200px) {
+	.wrapper{margin-left: 12%; margin-right: 12%;}
+	.wrapper-body{margin-left: 12%; margin-right: 12%;}
+}
 
 .main-title-holder{display: inline-block; position: relative;}
 .main-title{display: inline-block; font-size: 24px; line-height: 60px;}
-@media (min-width: 768px) {.main-title{font-size: 32px; line-height: 80px}}
-@media (min-width: 992px) {.main-title{font-size: 40px; line-height: 90px}}
+.normal-text{font-size: 14px; line-height: 20px;}
+@media (min-width: 768px) {
+	.main-title{font-size: 32px; line-height: 80px}
+	.normal-text{font-size: 16px; line-height: 30px;}
+}
+@media (min-width: 992px) {
+	.main-title{font-size: 40px; line-height: 90px}
+	.normal-text{font-size: 16px; line-height: 30px;}
+}
 
 .not-selectable{user-select: none;}
 
-.main-body{background-color: #001A38; padding: 10px 0 10px 0;}
+.main-body{background-color: var(--c0); padding: 10px 0 10px 0;}
+
+.sort-btn{background-color: var(--c1); border: none; padding: 0 10px 0 10px;
+	margin-left: 10px; color: #FFF; border-radius: 4px; transition: 0.4s;}
+.sort-btn:hover{background-color: var(--c2);}
 
 .main-table{border-collapse: separate; border-radius: 10px;}
-.version-row{font-size: 14px; line-height: 20px; background-color: #00224E;}
+.version-row{font-size: 14px; line-height: 20px; background-color: var(--c1);}
 .version-row .first-col{text-align: center;}
 .version-row td{padding-left: 4px; border-left: 0px solid #666; border-top: 0px solid #666;}
-.version-row td:hover{background-color: #003367;}
+.version-row td:hover{background-color: var(--c2);}
 .first-col{min-width: 140px; transition: 0.4s; position: sticky; left: 0; z-index: 1;
-	background-color: #00224E; border-left: 0px solid #666;}
+	background-color: var(--c1); border-left: 0px solid #666;}
 .main-table tr{height: 32px;}
-.main-table tr:hover .first-col{background-color: #003367; z-index: 2;}
+.main-table tr:hover .first-col{background-color: var(--c2); z-index: 2;}
 .vertical-space{height: 10px;}
 
 .face-name-container{display: inline-block;}
@@ -37,7 +65,7 @@ body::-webkit-scrollbar {display: none;}
 	display:inline-block; vertical-align: middle; transition: 0.4s;}
 .char-name{font-size: 14px; display: inline-block; vertical-align: middle;}
 .main-table tr:hover .first-col .char-face{
-	transform: scale(1.2); background-color: #001A38;
+	transform: scale(1.2); background-color: var(--c0);
 	border: 1px solid #ccc; border-radius: 4px;}
 @media (min-width: 768px) {
 	.main-table tr{height: 36px;}
@@ -53,10 +81,10 @@ body::-webkit-scrollbar {display: none;}
 	.char-face{height: 40px; width: 40px; margin: 1px 8px 1px 8px;}
 	.char-name{font-size: 18px;}
 }
-.tds{min-width: 20px; text-align: center; background-color: #001A38;
+.tds{min-width: 20px; text-align: center; background-color: var(--c0);
 	border-top: 1px solid #333; border-left: 1px solid #333; position: relative; z-index: 0;}
 .tds span{font-size: 8px; opacity: 0; vertical-align: middle; transition: 0.4s;}
-.banner-note{opacity: 0; position: absolute; background-color: #7891ec; transition: 0.4s; border-radius: 2px;
+.banner-note{opacity: 0; position: absolute; background-color: var(--cBanner); transition: 0.4s; border-radius: 2px;
 	width: auto; color: #fff; top: 0; right: 0; transform: scaleY(0);
 	line-height: 10px; font-size: 8px; padding: 0 2px 0 2px; margin: 2px 22px 0 0;}
 .no-wrap{white-space: nowrap;}

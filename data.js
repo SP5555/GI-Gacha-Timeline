@@ -158,7 +158,7 @@ var data = [{
 	"version": "3.1",
 	"banner": [{
 		"5": ["Cyno", "Venti"],
-		"4": ["Candace"]
+		"4": ["Candace", "Sayu", "Shinobu"]
 	},{
 		"5": ["Albedo", "Nilou"],
 		"4": []
