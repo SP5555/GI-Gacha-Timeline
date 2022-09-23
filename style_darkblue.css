@@ -101,6 +101,8 @@ body::-webkit-scrollbar {display: none;}
 	.banner-note{line-height: 16px; font-size: 14px; margin: 2px 28px 0 0;}
 }
 
+.align-center{justify-content: center;}
+
 .footer-text{font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;;
 	font-size: 20px; filter: blur(2px); opacity: 0;
 	text-align: center; padding: 20px 0 20px 0; transform: scaleX(1.04); transition: 0.4s;}
