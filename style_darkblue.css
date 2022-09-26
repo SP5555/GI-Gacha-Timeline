@@ -5,6 +5,12 @@
 	--cBanner: #7891ec;
 }
 
+@keyframes faceHover {
+	0% {filter: brightness(1.1);}
+	50% {filter: brightness(0.9);}
+	100% {filter: brightness(1.1);}
+}
+
 @font-face{font-family: GIFont; src: url("fonts/zh-cn.ttf");}
 html{min-width: 440px; scroll-behavior: smooth;}
 body{
@@ -61,10 +67,11 @@ body::-webkit-scrollbar {display: none;}
 .vertical-space{height: 10px;}
 
 .face-name-container{display: inline-block;}
-.char-face{height: 28px; width: 28px; margin: 1px 4px 1px 4px; object-fit: contain;
-	display:inline-block; vertical-align: middle; transition: 0.4s;}
+.char-face{height: 28px; width: 28px; margin: 1px 4px 1px 4px; border-radius: 50%;
+	object-fit: contain; display:inline-block; vertical-align: middle; transition: 0.4s;}
 .char-name{font-size: 14px; display: inline-block; vertical-align: middle;}
 .main-table tr:hover .first-col .char-face{
+	animation: faceHover 1.2s infinite ease-in-out normal;
 	transform: scale(1.2); background-color: var(--c0);
 	border: 1px solid #ccc; border-radius: 4px;}
 @media (min-width: 768px) {
