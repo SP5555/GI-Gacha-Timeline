@@ -22,6 +22,8 @@ var img_src = {
 	"Keqing": "LHQ30Zv",
 	"Klee": "3Y8dMCd",
 	"Kokomi": "nN0rHvE",
+	"Layla": "7nZeOrz",
+	"Nahida": "PVTJGfY",
 	"Noelle": "I41ZkWu",
 	"Nilou": "GhwNbMK",
 	"Ningguang": "xDs8iaz",
