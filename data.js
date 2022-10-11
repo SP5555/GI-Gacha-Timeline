@@ -161,7 +161,7 @@ var data = [{
 		"4": ["Candace", "Sayu", "Shinobu"]
 	},{
 		"5": ["Albedo", "Nilou"],
-		"4": []
+		"4": ["Barbara", "Beidou", "Xiangling"]
 	}]
 },{
 	"version": "3.2",
