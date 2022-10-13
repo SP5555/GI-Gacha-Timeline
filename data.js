@@ -166,10 +166,10 @@ var data = [{
 },{
 	"version": "3.2",
 	"banner": [{
-		"5": [],
-		"4": []
+		"5": ["Nahida", "Yoimiya"],
+		"4": ["Layla"]
 	},{
-		"5": [],
+		"5": ["Tartaglia", "Yae"],
 		"4": []
 	}]
 }];
