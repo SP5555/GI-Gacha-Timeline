@@ -167,7 +167,7 @@ var data = [{
 	"version": "3.2",
 	"banner": [{
 		"5": ["Nahida", "Yoimiya"],
-		"4": []
+		"4": ["Bennett", "Noelle", "Razor"]
 	},{
 		"5": ["Tartaglia", "Yae"],
 		"4": ["Layla"]
