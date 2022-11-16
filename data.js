@@ -170,7 +170,7 @@ var data = [{
 		"4": ["Bennett", "Noelle", "Razor"]
 	},{
 		"5": ["Tartaglia", "Yae"],
-		"4": ["Layla"]
+		"4": ["Heizou", "Layla", "Thoma"]
 	}]
 },{
 	"version": "3.3",
