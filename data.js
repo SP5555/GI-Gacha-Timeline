@@ -176,7 +176,7 @@ var data = [{
 	"version": "3.3",
 	"banner": [{
 		"5": ["Wanderer", "Itto"],
-		"4": ["Faruzan"]
+		"4": ["Faruzan", "Gorou", "Yanfei"]
 	},{
 		"5": ["Ayato", "Shogun"],
 		"4": []
