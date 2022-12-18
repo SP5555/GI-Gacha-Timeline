@@ -181,4 +181,13 @@ var data = [{
 		"5": ["Ayato", "Shogun"],
 		"4": []
 	}]
+},{
+	"version": "3.4",
+	"banner": [{
+		"5": ["Alhaitham", "Xiao"],
+		"4": ["Yaoyao"]
+	},{
+		"5": ["Hu Tao", "Yelan"],
+		"4": []
+	}]
 }];

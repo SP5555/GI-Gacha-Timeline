@@ -10,7 +10,7 @@ function tableHeaderBuilder(data) {
 
 	for (var s = 5; s >= 4; s--) {
 		for (var i = 0; i < data.length; i++) {
-			idvData = data[i];
+			let idvData = data[i];
 
 			let version_r_td = document.createElement("td");
 			version_r_td.colSpan = idvData["banner"].length;
@@ -31,7 +31,7 @@ function tableHeaderBuilder(data) {
 	main4.appendChild(main_tbody4); // main4 tbody append
 }
 
-function mainLoader(data, img_src, method) {
+function mainLoader(data, method) {
 
 	function buildRow(tbody, character) {
 		let cha_tr = document.createElement("tr");
@@ -40,7 +40,7 @@ function mainLoader(data, img_src, method) {
 
 		let img = document.createElement("img");
 		img.className = "char-face";
-		img.src = `https://imgur.com/${img_src[character]}.png`;
+		img.src = `GIfaces/${character.replace(/\s/g, "")}.png`;
 
 		let name_div = document.createElement("div");
 		name_div.className = "char-name";
@@ -69,15 +69,14 @@ function mainLoader(data, img_src, method) {
 		tbody.appendChild(cha_tr);
 	}
 
-	function sortByTimeline(data, img_src) {
-		cha_list = [];
-	
+	function sortByTimeline(data) {
+		let cha_list = [];
 		for (var s = 5; s >= 4; s--) {
 			for (var i = 0; i < data.length; i++) {
-				idvData = data[i];
+				let idvData = data[i];
 				for (var i1 = 0; i1 < idvData["banner"].length; i1++) {
 					for (var i2 = 0; i2 < idvData["banner"][i1][s].length; i2++) {
-						var character = idvData["banner"][i1][s][i2];
+						let character = idvData["banner"][i1][s][i2];
 
 						if (!cha_list.includes(character)) {
 							cha_list.push(character);
@@ -94,14 +93,14 @@ function mainLoader(data, img_src, method) {
 		}
 	}
 
-	function sortByNewest(data, img_src) {
-		cha_list = [];
+	function sortByNewest(data) {
+		let cha_list = [];
 		for (var s = 5; s >= 4; s--) {
 			for (var i = data.length - 1; i >= 0; i--) {
-				idvData = data[i];
+				let idvData = data[i];
 				for (var i1 = idvData["banner"].length - 1; i1 >= 0; i1--) {
 					for (var i2 = 0; i2 < idvData["banner"][i1][s].length; i2++) {
-						var character = idvData["banner"][i1][s][i2];
+						let character = idvData["banner"][i1][s][i2];
 
 						if (!cha_list.includes(character)) {
 							cha_list.push(character);
@@ -127,8 +126,8 @@ function mainLoader(data, img_src, method) {
 		main_tbody4.removeChild(main_tbody4.lastChild);
 	}
 
-	if (method == "timeline") {sortByTimeline(data, img_src)}
-	if (method == "newest") {sortByNewest(data, img_src);}
+	if (method == "timeline") {sortByTimeline(data)}
+	if (method == "newest") {sortByNewest(data);}
 
 	let space5 = document.createElement("div"); space5.className = "vertical-space";
 	let space4 = document.createElement("div"); space4.className = "vertical-space";
@@ -137,15 +136,15 @@ function mainLoader(data, img_src, method) {
 }
 
 function visualizer(data) {
-	var charDict = {};
+	let charDict = {};
 
 	for (var i = 0; i < data.length; i++) {
-		idvData = data[i];
+		var idvData = data[i];
 
 		for (var i1 = 0; i1 < idvData["banner"].length; i1++) {
 			// 5 star colorize
 			for (var i2 = 0; i2 < idvData["banner"][i1]["5"].length; i2++) {
-				character = idvData["banner"][i1]["5"][i2];
+				let character = idvData["banner"][i1]["5"][i2];
 
 				if (charDict[character] == undefined) {
 					charDict[character] = 1;
@@ -185,7 +184,7 @@ function visualizer(data) {
 			}
 			// 4 star colorize
 			for (var i2 = 0; i2 < idvData["banner"][i1]["4"].length; i2++) {
-				character = idvData["banner"][i1]["4"][i2];
+				let character = idvData["banner"][i1]["4"][i2];
 				let tdbox = document.getElementById(`${character}_v${idvData["version"]}_b${i1}`)
 				for (var x = 12; x > 0; x-=3) {
 					try {
@@ -203,11 +202,11 @@ function visualizer(data) {
 }
 
 function sortByT() {
-	mainLoader(data, img_src, "timeline");
+	mainLoader(data, "timeline");
 	visualizer(data);
 }
 function sortByN() {
-	mainLoader(data, img_src, "newest");
+	mainLoader(data, "newest");
 	visualizer(data);
 }
 
