@@ -179,7 +179,7 @@ var data = [{
 		"4": ["Faruzan", "Gorou", "Yanfei"]
 	},{
 		"5": ["Ayato", "Shogun"],
-		"4": []
+		"4": ["Rosaria", "Sara", "Sayu"]
 	}]
 },{
 	"version": "3.4",
