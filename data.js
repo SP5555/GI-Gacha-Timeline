@@ -185,7 +185,7 @@ var data = [{
 	"version": "3.4",
 	"banner": [{
 		"5": ["Alhaitham", "Xiao"],
-		"4": ["Yaoyao"]
+		"4": ["Xinyan", "Yaoyao", "Yun Jin"]
 	},{
 		"5": ["Hu Tao", "Yelan"],
 		"4": []
