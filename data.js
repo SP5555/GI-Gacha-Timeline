@@ -188,7 +188,7 @@ var data = [{
 		"4": ["Xinyan", "Yaoyao", "Yun Jin"]
 	},{
 		"5": ["Hu Tao", "Yelan"],
-		"4": []
+		"4": ["Beidou", "Ningguang", "Xingqiu"]
 	}]
 },{
 	"version": "3.5",
