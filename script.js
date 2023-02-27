@@ -167,7 +167,7 @@ function visualizer(data) {
 							char_txt.innerHTML = character;
 							let v_txt = document.createElement("span"); v_txt.className="no-wrap";
 							if (charDict[character] == 1) {
-								v_txt.innerHTML = `Release`;
+								v_txt.innerHTML = `1st Banner`;
 							} else {
 								v_txt.innerHTML = `Rerun ${charDict[character] - 1}`;
 							}

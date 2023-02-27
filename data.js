@@ -194,7 +194,7 @@ var data = [{
 	"version": "3.5",
 	"banner": [{
 		"5": ["Cyno", "Dehya"],
-		"4": []
+		"4": ["Barbara", "Bennett", "Collei"]
 	},{
 		"5": ["Ayaka", "Shenhe"],
 		"4": []
