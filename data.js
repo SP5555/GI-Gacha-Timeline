@@ -197,6 +197,15 @@ var data = [{
 		"4": ["Barbara", "Bennett", "Collei"]
 	},{
 		"5": ["Ayaka", "Shenhe"],
+		"4": ["Diona", "Mika", "Sucrose"]
+	}]
+},{
+	"version": "3.6",
+	"banner": [{
+		"5": [],
+		"4": []
+	},{
+		"5": ["Baizhu"],
 		"4": []
 	}]
 }];
