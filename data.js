@@ -202,10 +202,10 @@ var data = [{
 },{
 	"version": "3.6",
 	"banner": [{
-		"5": [],
+		"5": ["Nahida", "Nilou"],
 		"4": []
 	},{
-		"5": ["Baizhu"],
+		"5": ["Baizhu", "Ganyu"],
 		"4": []
 	}]
 }];
