@@ -203,7 +203,7 @@ var data = [{
 	"version": "3.6",
 	"banner": [{
 		"5": ["Nahida", "Nilou"],
-		"4": []
+		"4": ["Dori", "Layla", "Shinobu"]
 	},{
 		"5": ["Baizhu", "Ganyu"],
 		"4": []
