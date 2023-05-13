@@ -208,4 +208,13 @@ var data = [{
 		"5": ["Baizhu", "Ganyu"],
 		"4": ["Candace", "Fischl", "Kaveh"]
 	}]
+},{
+	"version": "3.7",
+	"banner": [{
+		"5": ["Yae", "Yoimiya"],
+		"4": ["Kirara"]
+	},{
+		"5": ["Alhaitham", "Kazuha"],
+		"4": []
+	}]
 }];
