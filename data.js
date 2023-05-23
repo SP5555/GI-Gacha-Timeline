@@ -212,7 +212,7 @@ var data = [{
 	"version": "3.7",
 	"banner": [{
 		"5": ["Yae", "Yoimiya"],
-		"4": ["Kirara"]
+		"4": ["Chongyun", "Kirara", "Yun Jin"]
 	},{
 		"5": ["Alhaitham", "Kazuha"],
 		"4": []
