@@ -217,4 +217,13 @@ var data = [{
 		"5": ["Alhaitham", "Kazuha"],
 		"4": []
 	}]
+},{
+	"version": "3.8",
+	"banner": [{
+		"5": ["Eula", "Klee"],
+		"4": ["Mika", "Razor", "Rosaria"]
+	},{
+		"5": ["Kokomi", "Wanderer"],
+		"4": ["Faruzan", "Thoma", "Yanfei"]
+	}]
 }];
