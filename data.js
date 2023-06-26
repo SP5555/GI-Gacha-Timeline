@@ -215,7 +215,7 @@ var data = [{
 		"4": ["Chongyun", "Kirara", "Yun Jin"]
 	},{
 		"5": ["Alhaitham", "Kazuha"],
-		"4": ["Heizou", "Xiang Ling", "Yaoyao"]
+		"4": ["Heizou", "Xiangling", "Yaoyao"]
 	}]
 },{
 	"version": "3.8",
