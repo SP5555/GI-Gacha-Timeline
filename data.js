@@ -221,9 +221,9 @@ var data = [{
 	"version": "3.8",
 	"banner": [{
 		"5": ["Eula", "Klee"],
-		"4": ["Mika", "Razor", "Rosaria"]
+		"4": ["Mika", "Razor", "Thoma"]
 	},{
 		"5": ["Kokomi", "Wanderer"],
-		"4": ["Faruzan", "Thoma", "Yanfei"]
+		"4": []
 	}]
 }];
