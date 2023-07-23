@@ -224,6 +224,6 @@ var data = [{
 		"4": ["Mika", "Razor", "Thoma"]
 	},{
 		"5": ["Kokomi", "Wanderer"],
-		"4": []
+		"4": ["Faruzan", "Rosaria", "Yanfei"]
 	}]
 }];
