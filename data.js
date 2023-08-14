@@ -230,7 +230,7 @@ var data = [{
 	"version": "4.0",
 	"banner": [{
 		"5": ["Lyney", "Yelan"],
-		"4": []
+		"4": ["Barbara", "Bennett", "Lynette"]
 	},{
 		"5": ["Zhongli", "Tartaglia"],
 		"4": []
