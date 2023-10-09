@@ -226,7 +226,7 @@ var data = [{
 		"5": ["Kokomi", "Wanderer"],
 		"4": ["Faruzan", "Rosaria", "Yanfei"]
 	}]
-}, {
+},{
 	"version": "4.0",
 	"banner": [{
 		"5": ["Lyney", "Yelan"],
@@ -234,5 +234,14 @@ var data = [{
 	},{
 		"5": ["Zhongli", "Tartaglia"],
 		"4": ["Freminet", "Noelle", "Sayu"]
+	}]
+},{
+	"version": "4.1",
+	"banner": [{
+		"5": ["Neuvillette", "Hu Tao"],
+		"4": ["Diona", "Fischl", "Xingqiu"]
+	},{
+		"5": ["Wriothesley", "Venti"],
+		"4": []
 	}]
 }]
