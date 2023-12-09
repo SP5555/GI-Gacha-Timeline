@@ -244,4 +244,22 @@ var data = [{
 		"5": ["Wriothesley", "Venti"],
 		"4": ["Chongyun", "Dori", "Thoma"]
 	}]
+},{
+	"version": "4.2",
+	"banner": [{
+		"5": ["Baizhu", "Furina"],
+		"4": ["Beidou", "Charlotte", "Collei"]
+	},{
+		"5": ["Ayato", "Cyno"],
+		"4": ["Kirara", "Shinobu", "Xiangling"]
+	}]
+},{
+	"version": "4.3",
+	"banner": [{
+		"5": ["Ayaka", "Navia"],
+		"4": []
+	},{
+		"5": ["Shogun", "Yoimiya"],
+		"4": ["Chevreuse"]
+	}]
 }]
