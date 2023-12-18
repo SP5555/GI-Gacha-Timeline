@@ -257,7 +257,7 @@ var data = [{
 	"version": "4.3",
 	"banner": [{
 		"5": ["Ayaka", "Navia"],
-		"4": []
+		"4": ["Candace", "Rosaria", "Sucrose"]
 	},{
 		"5": ["Shogun", "Yoimiya"],
 		"4": ["Chevreuse"]
