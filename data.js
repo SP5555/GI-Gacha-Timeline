@@ -262,4 +262,13 @@ var data = [{
 		"5": ["Shogun", "Yoimiya"],
 		"4": ["Chevreuse"]
 	}]
+},{
+	"version": "4.4",
+	"banner": [{
+		"5": ["Nahida", "Xianyun"],
+		"4": ["Faruzan", "Gaming", "Noelle"]
+	},{
+		"5": ["Xiao", "Yae"],
+		"4": []
+	}]
 }]
