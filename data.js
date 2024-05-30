@@ -271,4 +271,31 @@ var data = [{
 		"5": ["Xiao", "Yae"],
 		"4": ["Ningguang", "Xinyan", "Yaoyao"]
 	}]
+},{
+	"version": "4.5",
+	"banner": [{
+		"5": ["Chiori", "Itto"],
+		"4": ["Dori", "Gorou", "Yun Jin"]
+	},{
+		"5": ["Kazuha", "Neuvillette"],
+		"4": ["Barbara", "Xingqiu", "Yanfei"]
+	}]
+},{
+	"version": "4.6",
+	"banner": [{
+		"5": ["Arlecchino", "Lyney"],
+		"4": ["Freminet", "Lynette", "Xiangling"]
+	},{
+		"5": ["Baizhu", "Wanderer"],
+		"4": ["Beidou", "Faruzan", "Layla"]
+	}]
+},{
+	"version": "4.7",
+	"banner": [{
+		"5": ["Alhaitham", "Clorinde"],
+		"4": ["Sethos"]
+	},{
+		"5": ["Furina", "Sigewinne"],
+		"4": []
+	}]
 }]
