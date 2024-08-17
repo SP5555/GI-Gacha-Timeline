@@ -33,7 +33,15 @@ function tableHeaderBuilder(data) {
 
 function mainLoader(data, method) {
 
-	function buildRow(tbody, character) {
+	function insertFirst(p, c) {
+		p.insertBefore(c, p.firstChild);
+	}
+
+	function insertLast(p, c) {
+		p.appendChild(c);
+	}
+
+	function buildRow(tbody, character, is_first) {
 		let cha_tr = document.createElement("tr");
 		let cha_head_td = document.createElement("td");
 		cha_head_td.className = "first-col";
@@ -65,8 +73,11 @@ function mainLoader(data, method) {
 				cha_tr.appendChild(cha_r_td);
 			}
 		}
-
-		tbody.appendChild(cha_tr);
+		if (is_first) {
+			insertFirst(tbody, cha_tr);
+		} else {
+			insertLast(tbody, cha_tr);
+		}
 	}
 
 	function sortByTimeline(data) {
@@ -82,9 +93,9 @@ function mainLoader(data, method) {
 							cha_list.push(character);
 
 							if (s == 5) {
-								buildRow(main_tbody5, character);
+								buildRow(main_tbody5, character, true);
 							} else {
-								buildRow(main_tbody4, character);
+								buildRow(main_tbody4, character, true);
 							}
 						}
 					}
@@ -93,7 +104,7 @@ function mainLoader(data, method) {
 		}
 	}
 
-	function sortByNewest(data) {
+	function sortByRecent(data) {
 		let cha_list = [];
 		for (var s = 5; s >= 4; s--) {
 			for (var i = data.length - 1; i >= 0; i--) {
@@ -106,9 +117,9 @@ function mainLoader(data, method) {
 							cha_list.push(character);
 
 							if (s == 5) {
-								buildRow(main_tbody5, character);
+								buildRow(main_tbody5, character, false);
 							} else {
-								buildRow(main_tbody4, character);
+								buildRow(main_tbody4, character, false);
 							}
 						}
 					}
@@ -127,7 +138,7 @@ function mainLoader(data, method) {
 	}
 
 	if (method == "timeline") {sortByTimeline(data)}
-	if (method == "newest") {sortByNewest(data);}
+	if (method == "recent") {sortByRecent(data);}
 
 	let space5 = document.createElement("div"); space5.className = "vertical-space";
 	let space4 = document.createElement("div"); space4.className = "vertical-space";
@@ -205,13 +216,13 @@ function sortByT() {
 	mainLoader(data, "timeline");
 	visualizer(data);
 }
-function sortByN() {
-	mainLoader(data, "newest");
+function sortByMR() {
+	mainLoader(data, "recent");
 	visualizer(data);
 }
 
 tableHeaderBuilder(data);
-sortByN();
+sortByMR();
 
 var t2 = new Date().getTime();
 document.getElementById("loadTime").innerHTML = `Loading Time - ${t2 - t1}ms`

@@ -293,18 +293,27 @@ var data = [{
 	"version": "4.7",
 	"banner": [{
 		"5": ["Alhaitham", "Clorinde"],
-		"4": ["Sethos"]
+		"4": ["Bennett", "Thoma", "Sethos"]
 	},{
 		"5": ["Furina", "Sigewinne"],
-		"4": []
+		"4": ["Gaming", "Noelle", "Rosaria"]
 	}]
 },{
 	"version": "4.8",
 	"banner": [{
-		"5": ["Emilie"],
-		"4": []
+		"5": ["Navia", "Nilou"],
+		"4": ["Kaveh", "Kirara", "Ningguang"]
 	},{
-		"5": [],
+		"5": ["Emilie", "Yelan"],
+		"4": ["Razor", "Xiangling", "Yanfei"]
+	}]
+},{
+	"version": "5.0",
+	"banner": [{
+		"5": ["Kazuha", "Mualani"],
+		"4": ["Kachina"]
+	},{
+		"5": ["Shogun", "Kinich"],
 		"4": []
 	}]
 }]
