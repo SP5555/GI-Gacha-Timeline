@@ -260,7 +260,7 @@ var data = [{
 		"4": ["Candace", "Rosaria", "Sucrose"]
 	},{
 		"5": ["Shogun", "Yoimiya"],
-		"4": ["Chevreuse"]
+		"4": ["Bennett", "Chevreuse", "Sara"]
 	}]
 },{
 	"version": "4.4",
@@ -311,9 +311,36 @@ var data = [{
 	"version": "5.0",
 	"banner": [{
 		"5": ["Kazuha", "Mualani"],
-		"4": ["Kachina"]
+		"4": ["Bennett", "Kachina", "Xinyan"]
 	},{
 		"5": ["Shogun", "Kinich"],
-		"4": []
+		"4": ["Chevreuse", "Sara", "Thoma"]
+	}]
+},{
+	"version": "5.1",
+	"banner": [{
+		"5": ["Chiori", "Xilonen"],
+		"4": ["Candace", "Collei", "Dori"]
+	},{
+		"5": ["Hu Tao", "Nahida"],
+		"4": ["Sethos", "Shinobu", "Xingqiu"]
+	}]
+},{
+	"version": "5.2",
+	"banner": [{
+		"5": ["Chasca", "Lyney"],
+		"4": ["Barbara", "Ororon", "Sucrose"]
+	},{
+		"5": ["Neuvillette", "Zhongli"],
+		"4": ["Fischl", "Heizou", "Yaoyao"]
+	}]
+},{
+	"version": "5.3",
+	"banner": [{
+		"5": ["Citlali", "Mavuika"],
+		"4": ["Bennett", "Diona", "Kachina"]
+	},{
+		"5": ["Arlecchino", "Clorinde"],
+		"4": ["Chevreuse", "Lan Yan", "Rosaria"]
 	}]
 }]
